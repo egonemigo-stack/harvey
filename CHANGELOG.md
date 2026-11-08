@@ -104,6 +104,15 @@ minor versions can still change behaviour.
 - **`channels.email.min_write_score`** (default 0): the writer skips prospects
   scored below it. Scout also checks `compliance.do_not_contact` before
   reading a listed company's site or spending verification credits on it.
+- **The Writer sees what Sellbird found on the company's site.** A
+  per-person first email now gets the profile and discovery findings as
+  facts: no online booking (or that they have it), Google or Meta ads
+  running or not, Google Maps and search positions with their phrase,
+  stale content with its date, the Google rating and an agency credited in
+  the footer. Before, these showed on the company card but never reached
+  the prompt, so a draft could only lean on the description and tech stack.
+  The newest finding per signal is used (per search phrase for ranks), and
+  a failed read never stops writing.
 - **A free Precleared key in one step** (from #121 by @gabrielaoimevbore-beep).
   `sellbird setup` now offers to get a free key for the cold-email check with
   just an email address, instead of sending people to a web page and back, and
